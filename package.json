@@ -1,0 +1,21 @@
+{
+  "name": "app-compiler",
+  "version": "1.0.0",
+  "description": "Multi-stage AI pipeline: Natural Language → Validated Executable App Schema",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "frontend": "cd frontend && npm start",
+    "evaluate": "node evaluation/run_eval.js"
+  },
+  "dependencies": {
+      "groq-sdk": "^0.7.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.5",
+      "express": "^4.18.3"
+}
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
